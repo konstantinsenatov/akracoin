@@ -1,0 +1,168 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.bridges-page
+				.bridges-page__hero.hero-bridges-page
+					.hero-bridges-page__container.container
+						.hero-bridges-page__row.general-row 
+							h1 Блокчейн-мосты между 
+								span Ethereum 
+								|и 
+								span Binance Smart Chain
+							.hero-bridges-page__img 
+								img(src="img/pages/bridges-page/1.png", alt="alt")
+						p Свободный обмен активами между различными блокчейн-сетями возможен только через мосты. Их использование даёт держателям криптовалюты AKRA больше свобод в плане обращения токена: не только переводить его в пределах одной сети, но и обмениваться с различными экосистемами.
+		
+				.bridges-page__whatis.whatis-bridges-page
+					.whatis-bridges-page__container.container 
+						
+						h2 Что такое блокчейн-мосты
+						
+						.whatis-bridges-page__text-img1.general-row 
+							.whatis-bridges-page__img1
+								img(src="img/pages/bridges-page/2.png", alt="alt")
+							p Блокчейн-мост — это специальная платформа, которая обеспечивает перенос токенов или другой информации из одного блокчейна в другой. Без этого моста совместимость криптовалют практически нулевая: ей мешают уникальные алгоритмы каждого блокчейна, резко изменяющиеся курсы криптовалют и другие факторов.
+						
+						p Без использования мостов кроссчейновый обмен криптовалюты можно осуществить с участием централизованных и децентрализованных бирж. Биржевый кроссчейн на фоне блокчейн-мостов — не всегда лучшее решение по обмену криптовалют, но как альтернатива может быть использован. Токен AKRA корректно взаимодействует со смарт-контрактами на децентрализованных (Pancakeswap, Uniswap) и централизованных (Coinmarketcap, Coingecko) биржах.
+						
+						.whatis-bridges-page__items
+							.whatis-bridges-page__row 
+								.whatis-bridges-page__item 
+									.whatis-bridges-page__num 1
+									.whatis-bridges-page__text Ищем биржи, поддерживающие возможность обмена интересующих криптовалют, регистрируемся и открываем  соответствующие криптовалютные кошельки.
+								.whatis-bridges-page__item 
+									.whatis-bridges-page__num 2
+									.whatis-bridges-page__text Переводим на внутренний кошелёк биржи криптовалюту, потратив её часть на комиссию за транзакцию.
+								.whatis-bridges-page__item 
+									.whatis-bridges-page__num 3
+									.whatis-bridges-page__text Производим обмен одной криптовалюты на другую (опять же с комиссией!).
+								.whatis-bridges-page__item 
+									.whatis-bridges-page__num 4
+									.whatis-bridges-page__text Выводим полученную криптовалюту на свой внешний кошелёк, не забывая про комиссию.
+
+						p На биржах за обмен отвечают объёмные внутренние пулы, а сама процедура номинально производится на их внутренних кошельках. Если необходимого для равноценного обмена количества токенов на кошельках биржи не окажется, то и обменять криптовалюту не удастся.
+						
+						.whatis-bridges-page__text-img2.general-row 
+							p Альтернативой биржевому обмену выступают P2P-обменники, но работающие на базе всё тех же бирж. Здесь обмен производится между держателями токенов напрямую и зачастую по более выгодному курсу, но есть свои тонкости и риски.
+							.whatis-bridges-page__img2
+								img(src="img/pages/bridges-page/3.png", alt="alt")
+						p На фоне биржевого кроссинга криптовалют блокчейн-мосты дают держателям токенов больше возможностей по их обмену между разными экосистемами. Они работают за пределами централизованных бирж в мире децентрализованных финансов (DeFi) — фактически обеспечивают проведение операций на уровне самих блокчейнов.
+		
+				.bridges-page__cards.cards-bridges-page
+					.cards-bridges-page__container.container
+						h3 Такой механизм работы наделяет блокчейн-мосты рядом преимуществ перед централизованными обменниками:
+						.cards-bridges-page__container.container 
+							.cards-bridges-page__items 
+								.cards-bridges-page__item 
+									.cards-bridges-page__column 
+										.cards-bridges-page__icon 
+											img(src="img/pages/bridges-page/1.svg", alt="alt")
+										.cards-bridges-page__title Гибкость операций с криптовалютой
+										.cards-bridges-page__text Через мосты держатели могут переводить криптовалютные активы из одной блокчейн-сети в другую. Это открывает им доступ к преимуществам всех доступных технологий экосистем, не ограничивая возможности только одной блокчейн-сетью.
+								.cards-bridges-page__item 
+									.cards-bridges-page__column 
+										.cards-bridges-page__icon 
+											img(src="img/pages/bridges-page/2.svg", alt="alt")
+										.cards-bridges-page__title Масштабируемость сетей
+										.cards-bridges-page__text Мосты соединяют основные и вторичные цепочки, эффективнее распределяя нагрузку транзакций по всей экосистеме. При больших объёмах транзакций существенно снижается нагрузка на сеть, что также положительно отражается на скорости обработки информации.
+								.cards-bridges-page__item 
+									.cards-bridges-page__column 
+										.cards-bridges-page__icon 
+											img(src="img/pages/bridges-page/3.svg", alt="alt")
+										.cards-bridges-page__title Экономия на комиссиях
+										.cards-bridges-page__text.cards-bridges-page__text-smaller Пользователи могут переводить через мосты активы из немасштабируемых блокчейнов в высокопроизводительные цепочки, выплачивая низкую комиссию за газ, при этом пользуясь всеми преимуществами смарт-контрактов Ethereum. Даже при проведении микротранзакций через мосты значительно снижается комиссия, что расширяет возможности в сфере микроинвестирования.
+								.cards-bridges-page__item 
+									.cards-bridges-page__column 
+										.cards-bridges-page__icon 
+											img(src="img/pages/bridges-page/4.svg", alt="alt")
+										.cards-bridges-page__title Высокая скорость обмена
+										.cards-bridges-page__text Механизм работы блокчейн-мостов предусматривает мгновенную выдачу нового криптовалютного актива при обмене — больше не приходится часами ждать проверки транзакции и зачисления токенов.
+								.cards-bridges-page__item 
+									.cards-bridges-page__column 
+										.cards-bridges-page__icon 
+											img(src="img/pages/bridges-page/5.svg", alt="alt")
+										.cards-bridges-page__title Высокая безопасность
+										.cards-bridges-page__text При обмене токена через мосты исключается участие третьих лиц, тем самым гарантируется конфиденциальность операций и отсутствие внешнего контроля над активностью держателей токена.
+
+						p Как и при обмене на биржах, меняемые через мосты токены должны пройти листинг. Он нужен для того, чтобы платформа смогла идентифицировать конкретный токен. В стандарте сети Ethereum ERC-20 их присутствует немало, а без идентификации возникнет неразбериха при обмене. Для включения в список кроссчейн-токенов моста листинг может проводиться в упрощенной форме путем голосования валидаторов.
+						p Держатели wrapped-токенов AKRA через мосты могут отправлять криптовалюту в Ethereum, а из этой экосистемы — в сеть Binance Smart Chain, минуя тем самым цепочку бирж-посредников, экономя на комиссии и сокращая количество действий при обмене до минимума.
+
+				.bridges-page__type.type-bridges-page
+					.type-bridges-page__container.container 
+						h2 Какие существуют мосты между 
+							span Ethereum 
+							|и 
+							br
+							span Binance Smart Chain
+						.type-bridges-page__body.general-row 
+							.type-bridges-page__img 
+								img(src="img/pages/bridges-page/4.png", alt="alt")
+							p Блокчейн-мостов, обеспечивающих передачу токенов между цепочками Ethereum и Binance Smart Chain, много, но наибольшее внимание стоит уделить тройке лидеров.
+						.type-bridges-page__binance
+							h2 Binance Smart Chain Bridge
+							p Сервис даёт возможность перемещать цифровые активы (токены и смарт-контракты) в Binance Smart Chain. Через дополнительный кошелёк Binance Wallet держатели активов могут выполнять как перекрёстные свопы между BNB на BSC, так и кроссчейн-транзакции. Сервис поддерживает эфироподобные токены стандарта ERC-20 и криптовалюты «семейства» TRON, соответствующие стандарту TRC-20, которые после обмена конвертируются в BEP-20, основанную на нативной валюте BNB.
+						.type-bridges-page__items 
+							.type-bridges-page__row 
+								.type-bridges-page__item 
+									.type-bridges-page__icon 1
+									.type-bridges-page__text Binance Smart Chain Bridge не берёт комиссию за обмен
+								.type-bridges-page__item 
+									.type-bridges-page__icon 2
+									.type-bridges-page__text Для обмена токенов не нужна регистрация на Binance
+								.type-bridges-page__item 
+									.type-bridges-page__icon 3
+									.type-bridges-page__text Стоимость wrapped-токенов при обмене приравнивается к реальной стоимости обмениваемых криптовалют
+						.type-bridges-page__openbisea
+							h2 OpenBiSea
+							p Мост организует обмен между сетью Ethereum и Binance Smart Chain с возможностью конвертации активов и возвратом обратно со 100% доказательством ценности. Дополнительно OpenBiSea предлагает готовое решение по конвертации и продаже NFT.
+						.type-bridges-page__komodo
+							h2 Komodo
+							p Сервис блокчейн-проекта под названием Simple Trading View позволяет одновременно хранить один криптовалютный актив в двух и более экосистемах, совершать мгновенный обмен по реальным курсам цифровых валют.
+							p Вне зависимости от выбора конкретной платформы для обладателей токенов преимущества мостов очевидны. Их может отличать скорость обработки транзакций, интерфейс, условия использования, но механизм работы един для всех.
+							p Для проекта AKRA был выбран Binance Bridge, как наиболее известный и заслуживающий доверия.
+				
+				.bridges-page__work.work-bridges-page
+					.work-bridges-page__container.container 
+						h2 Как работают блокчейн-мосты
+						.work-bridges-page__body.general-row 
+							.work-bridges-page__description 
+								|Относительно токена 
+								span AKRA 
+								|работа мостов выглядит следующим образом:
+							.work-bridges-page__img 
+								img(src="img/pages/bridges-page/5.png", alt="alt")
+						.work-bridges-page__items 
+							.work-bridges-page__row 
+								.work-bridges-page__item 
+									.work-bridges-page__column 
+										.work-bridges-page__icon 1
+										.work-bridges-page__text Есть один токен AKRA в сети Ethereum — токен 1, который нужно обменять на токен 2 в сети Binance Smart Chain.
+								.work-bridges-page__item 
+									.work-bridges-page__column 
+										.work-bridges-page__icon 2
+										.work-bridges-page__text Выбранный токен 1 отправляется в смарт-контракт моста. В сети Ethereum он отправляется в принадлежащий мосту пул, где присоединятся к другим wrapped-токенам.
+								.work-bridges-page__item 
+									.work-bridges-page__column 
+										.work-bridges-page__icon 3
+										.work-bridges-page__text Из аналогичного пула, но в сети BSC извлекается абсолютный эквивалент токена 1, полностью его копирующий, и переводится на кошелёк пользователя в блокчейне Binance Smart Chain.
+								.work-bridges-page__item 
+									.work-bridges-page__column 
+										.work-bridges-page__icon 4
+										.work-bridges-page__text Токен 1 остаётся в пуле моста и в последующем будет использован при встречном обмене.
+
+						p Для обладателя AKRA обмен аналогичен процедуре перевода средств из одного кошелька в другой. Хотя фактически перевода не происходит: в одной сети токен замораживается, а его заменяет полностью идентичный ему токен, но уже в другой сети.
+						p Мосты дают возможность свободного обращения криптовалюты AKRA между блокчейн-сетями. Каждая процедура будет проведена быстро, безопасно и с минимальной комиссией, открывая перспективы даже для микроинвестирования.
+
+
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

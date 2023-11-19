@@ -1,0 +1,145 @@
+h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.625rem;
+	display: flex;
+	align-items: center;
+	color: #F4F6F8;
+	margin: 0;
+	@media (max-width: 47.9375rem){
+		display: flex;
+		justify-content: center;
+		font-size: 2rem;
+		line-height: 2.421rem;
+	}
+	@media (max-width: 29.9375rem){
+		font-size: 1.5rem;
+			line-height: 1.813rem;
+	}
+}
+
+h2 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2.421rem;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+	@media (max-width: 47.9375rem){
+		display: flex;
+		justify-content: center;
+		font-size: 1.5rem;
+		line-height: 1.813rem;
+	}
+	@media (max-width: 29.9375rem){
+		font-size: 1.125rem;
+		line-height: 1.361rem;
+	}
+}
+
+h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1.813rem;
+	color: #FFFFFF;
+
+	@media (max-width: 47.9375rem) {
+		font-size: 1.25rem;
+		line-height: 1.361rem;
+	}
+
+	@media (max-width: 29.9375rem) {
+		font-size: 0.75rem;
+		line-height: 0.875rem;
+	}
+}
+
+h4 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	color: #FFFFFF;
+	@media (max-width: 47.9375rem){
+		font-size: 1.125rem;
+		line-height: 1.375rem;
+	}
+	@media (max-width: 29.9375rem){
+		font-size: 0.75rem;
+		line-height: 0.9375rem;
+	}
+}
+
+p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.813rem;
+	color: #FFFFFF;
+	@media (max-width: 47.9375rem){
+		display: flex;
+		align-items: center;
+		text-align: center;
+		font-size: 0.875rem;
+		line-height: 1.0625rem;
+	}
+	@media (max-width: 29.9375rem){
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+	}
+}
+
+
+
+
+.circle {
+	position: absolute;
+	z-index: -1;
+	width: 20vw;
+	height: 20vw;
+	border-radius: 50%;
+	filter: blur(50px);
+}
+.circle1 {
+	top: 5%;
+	right: 10%;
+	background-color: #0de5fe;
+}
+.circle2 {
+	top: 18%;
+	right: 70%;
+	background-color: #e663ff;
+}
+.circle3 {
+	top: 27%;
+	right: 50%;
+	background-color: #9ae987;
+}
+.circle4 {
+	top: 38%;
+	left: 60%;
+	background-color: #6e65d1;
+}
+.circle5 {
+	top: 55%;
+	left: 30%;
+	background-color: #fd868c;
+}
+.circle6 {
+	top: 65%;
+	left: 50%;
+	background-color: #fed886;
+}
+.circle7 {
+	top: 80%;
+	right: 30%;
+	background-color: #3646c5;
+}

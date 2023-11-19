@@ -1,0 +1,143 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.crowdfunding-page 
+				.crowdfunding-page__hero.hero-crowdfunding-page
+					.hero-crowdfunding-page__container.container
+						.hero-crowdfunding-page__row.general-row 
+							h1 
+								|Краудфандинг на основе токенов 
+								span AKRA 
+								|— помощь в развитии стартапов
+							.hero-crowdfunding-page__img 
+								img(src="img/pages/crowdfunding-page/1.png", alt="alt")
+						p Малому и среднему бизнесу, начинающим предпринимателям часто не хватает денег для развития проектов. Многие люди и организации готовы поддержать хорошую идею и вложить средства в её реализацию. Краудфандинг является одним из способов привлечения инвестиций. Термин возник от английских слов crowd — «толпа» и funding — «финансирование» и дословно означает «народное финансирование».
+						p Краудфандинг даёт возможность бизнесу получать необходимые денежные средства за счёт инвесторов, заинтересованных в проекте. Благодаря такой финансовой поддержке было запущено и реализовано множество стартапов.
+						p Итак, краудфандинг — это механизм сбора денежных средств от неопределенного круга третьих лиц для финансирования как коммерческих, так и некоммерческих проектов. В качестве денежных средств, или средств платежа, может выступать криптовалюта, в нашем случае — токены AKRA.
+				
+				.crowdfunding-page__model.model-crowdfunding-page 
+					.model-crowdfunding-page__container.container 
+						.model-crowdfunding-page__items-top 
+							.model-crowdfunding-page__row-top 
+								.model-crowdfunding-page__item-top 
+									.model-crowdfunding-page__column-top 
+										.model-crowdfunding-page__title-top.color1 Фандрайзеры
+										.model-crowdfunding-page__text-top Это физические лица или группа лиц, а также стартапы, субъекты малого и среднего бизнеса, которые привлекают «народные» средства на различные цели.
+								.model-crowdfunding-page__item-top 
+									.model-crowdfunding-page__column-top 
+										.model-crowdfunding-page__title-top.color2 Краудфандинговая платформа
+										.model-crowdfunding-page__text-top Это специализированный интернет-ресурс, на котором размещаются крауд-проекты или веб-сайт, посвященный сбору денежных средств посредством краудфандинга.
+								.model-crowdfunding-page__item-top 
+									.model-crowdfunding-page__column-top 
+										.model-crowdfunding-page__title-top.color3 Физические и/или юридические лица
+										.model-crowdfunding-page__text-top Это лица, осуществляющие перечисление денежных средств в поддержку какого-либо проекта.
+
+						.model-crowdfunding-page__items-bottom 
+							.model-crowdfunding-page__row-bottom
+								.model-crowdfunding-page__item-bottom 
+									.model-crowdfunding-page__text-bottom Дарители, или жертвователи (англ. donors) - в благотворительном краудфандинге
+								.model-crowdfunding-page__item-bottom 
+									.model-crowdfunding-page__text-bottom Потенциальные покупатели (англ. prebuyers) - при использовании модели
+								.model-crowdfunding-page__item-bottom 
+									.model-crowdfunding-page__text-bottom Бэкеры, или спонсоры (англ. backers) - для краудфандинга, основанного на вознаграждении
+								.model-crowdfunding-page__item-bottom 
+									.model-crowdfunding-page__text-bottom Заимодавцы (англ. lenders) в краудлендинге
+								.model-crowdfunding-page__item-bottom 
+									.model-crowdfunding-page__text-bottom Инвеcторы (англ. investors) в краудинвестинге
+
+						p Как можно увидеть на экономической модели, краудфандинг имеет много разновидностей:
+						ul 
+							li пожертвования;
+							li предзаказ;
+							li спонсорство за вознаграждение;
+							li займы;
+							li инвестиции.
+						p Далее мы будем говорить о финансировании исключительно коммерческих проектов, механизм которого построен на взаиморасчетах в токенах AKRA.
+
+				.crowdfunding-page__work.work-crowdfunding-page
+					.work-crowdfunding-page__container.container 
+						.work-crowdfunding-page__body.general-row
+							.work-crowdfunding-page__body--left 
+								h2 Как работает наш краудфандинг
+								p.work-crowdfunding-page__body--text-desktop В краудфандинге, как правило, задействованы три стороны:
+							.work-crowdfunding-page__img 
+								img(src="img/pages/crowdfunding-page/2.png", alt="alt")
+							p.work-crowdfunding-page__body--text-mobile В краудфандинге, как правило, задействованы три стороны:
+
+						.work-crowdfunding-page__items 
+							.work-crowdfunding-page__item 
+								.work-crowdfunding-page__column 
+									.work-crowdfunding-page__icon 1
+									.work-crowdfunding-page__text Автор (фаундер, реципиент) проекта
+							.work-crowdfunding-page__item 
+								.work-crowdfunding-page__column 
+									.work-crowdfunding-page__icon 2
+									.work-crowdfunding-page__text Инвестор (вкладчик, донор, бэкер)
+							.work-crowdfunding-page__item 
+								.work-crowdfunding-page__column 
+									.work-crowdfunding-page__icon 3
+									.work-crowdfunding-page__text Специальная краудфандинговая инвестплатформа
+
+						p В качестве авторов и инвесторов могут выступать физические и юридические лица. Краудфандинговая платформа — необязательный участник сделки, но без неё возрастают риски мошенничества. Поэтому для размещения стартапов чаще всего используется специализированная интернет-площадка AKRA.
+						p Краудфандинговая платформа собирает информацию о проектах, регистрирует на сайте и публикует данные в сети. Криптовалюта AKRA, полученная от инвесторов, поступает на счёт платформы, которая затем перенаправляет их фаундеру. За свои услуги платформа получает комиссию, которая зависит от суммы привлечённых средств.
+						p Чтобы начать сбор криптовалюты, автору необходимо озвучить идею — на что будут потрачены полученные от инвесторов средства, рассказать о важности и пользе проекта для общества. Краудфандинговые площадки не позволяют использовать привлечённые средства на сторонние цели: идеи оцениваются на адекватность и реалистичность, документы по проекту проверяются. Обязательно определяется срок окончания инвестирования и указывается сумма цифровых денег AKRA, которую требуется собрать. Информация является открытой и прозрачной для всех желающих.
+
+				.crowdfunding-page__skoring.scoring-crowdfunding-page
+					.scoring-crowdfunding-page__container.container 
+						.scoring-crowdfunding-page__body.general-row 
+							.scoring-crowdfunding-page__img
+								img(src="img/pages/crowdfunding-page/3.png", alt="alt")
+							.scoring-crowdfunding-page__body--right 
+								h2 Скоринг и ИИ на платформе AKRA
+								p.scoring-crowdfunding-page__body--text-desktop Скоринг — это система оценки авторов проектов, основанная на статистических методах и возможностях искусственного интеллекта. Благодаря этой технологии доступ к инвестициям на платформе AKRA получает лишь небольшой процент от подавших заявку, а криптовалютные средства инвесторов система предлагает распределить между несколькими рисковыми активами в определенных пропорциях. Чем больше сумма инвестиций, тем больше диверсификация и шире инвестиционный портфель. 
+							p.scoring-crowdfunding-page__body--text-mobile Скоринг — это система оценки авторов проектов, основанная на статистических методах и возможностях искусственного интеллекта. Благодаря этой технологии доступ к инвестициям на платформе AKRA получает лишь небольшой процент от подавших заявку, а криптовалютные средства инвесторов система предлагает распределить между несколькими рисковыми активами в определенных пропорциях. Чем больше сумма инвестиций, тем больше диверсификация и шире инвестиционный портфель. 
+						p Суть его формирования состоит в том, чтобы «не класть все яйца в одну корзину», а в случае проблем с платежеспособностью отдельных авторов инвестиционных проектов обеспечить сохранность вложенных цифровых активов AKRA. В результате потенциального дефолта одного из инвестиционных проектов участники платформы AKRA не должны почувствовать серьезного снижения общей доходности по портфелю.
+		
+				.crowdfunding-page__diagram.diagram-crowdfunding-page
+					.diagram-crowdfunding-page__container.container 
+						h2 Объем мирового рынка краудфандинга = 10,2 млрд долл.
+						span (данные QY Research, 2018)
+						.diagram-crowdfunding-page__body 
+							.diagram-crowdfunding-page__circle 
+								img(src="img/pages/crowdfunding-page/diagram.svg", alt="alt")
+								.diagram-crowdfunding-page__item.diagram-crowdfunding-page__item1
+									span Другие регионы
+									span 37%
+								.diagram-crowdfunding-page__item.diagram-crowdfunding-page__item2
+									span Россия
+									span 1%
+								.diagram-crowdfunding-page__item.diagram-crowdfunding-page__item3
+									span Евросоюз
+									span 18%
+								.diagram-crowdfunding-page__item.diagram-crowdfunding-page__item4
+									span США
+									span 33%
+								.diagram-crowdfunding-page__item.diagram-crowdfunding-page__item5
+									span Китай
+									span 37%
+		
+				.crowdfunding-page__risk.risk-crowdfunding-page
+					.risk-crowdfunding-page__container.container 
+						.risk-crowdfunding-page__body.general-row 
+							.risk-crowdfunding-page__body--left 
+								h2 Риски краудфандинга
+								p.risk-crowdfunding-page__body--text-desktop Инвесторы вкладывают денежные средства в проект, положительный результат которого нельзя гарантировать.
+							.risk-crowdfunding-page__img 
+								img(src="img/pages/crowdfunding-page/4.png", alt="alt")
+							p.risk-crowdfunding-page__body--text-mobile Инвесторы вкладывают денежные средства в проект, положительный результат которого нельзя гарантировать.
+						p Для доноров существует вероятность столкнуться с мошенничеством. Некоторые авторы проектов даже не собираются исполнять свои обязательства — они просто присваивают собранные средства и исчезают. Такой вариант более вероятен при сотрудничестве напрямую. При инвестировании на официальных платформах, таких как интернет-площадка AKRA, риск мошенничества снижается, поскольку платформа проверяет пользователей и может заблокировать доступ к стартапу на любом этапе.
+						p Фаундеры (авторы стартапов) могут столкнуться с кражей своих идей, поскольку при размещении бизнес-плана описываются все детали. Люди, у которых есть деньги, могут присвоить идею и реализовать проект раньше. Также авторам рекомендуется внимательно читать правила краудфандинговых платформ. Некоторые следуют политике «all-or-nothing», то есть «всё или ничего». Если автору не удалось собрать указанную сумму к определённой дате, то он не получает никаких денежных средств.
+						p Бывает, что автор некорректно рассчитал сумму инвестиций в бизнес. Платформы могут пойти навстречу и разрешить изменить размер привлекаемых средств в процессе сбора — опять же зависит от правил площадки. Но даже если расчёты верны, это не гарантирует автору, что будет собрана необходимая сумма. Следует также учесть налоги — собранные с помощью краудфандинга средства во многих странах являются доходом.
+						p С помощью краудфандинга люди поддерживают разные стартапы, но существует серьёзная проблема. Краудфандинговые платформы — централизованные организации, где потоки денег пристально контролируются. В связи с этим эксперты дают прогноз, что в ближайшее время проекты будут финансироваться блокчейн-операциями и этот процесс станет децентрализованным.
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

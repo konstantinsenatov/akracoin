@@ -1,0 +1,52 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.faq
+				.faq__container.container 
+					h1 FAQ
+					.top-items-faq-wrapper
+						h2 Описание сервиса
+						.faq__items-top.top-items-faq
+							.top-items-faq__item.faq__item
+								h3.top-items-faq__subtitle.faq__subtitle.active Что такое AKRA?
+									span
+								.top-items-faq__text.faq__text.faq__text-first Akra Wallet v1 будет способен принять фиатные деньги от любого физического или юридического лица, любой страны и любой валюты. Тем самым он открывает доступ к криптовалюте любому лицу.
+							.top-items-faq__item.faq__item
+								h3.top-items-faq__subtitle.faq__subtitle Как зарегистрировать кошелек?
+									span
+								.top-items-faq__text.faq__text Akra Wallet v1 будет способен принять фиатные деньги от любого физического или юридического лица, любой страны и любой валюты. Тем самым он открывает доступ к криптовалюте любому лицу.
+							.top-items-faq__item.faq__item
+								h3.top-items-faq__subtitle.faq__subtitle Как работает платформа?
+									span
+								.top-items-faq__text.faq__text Akra Wallet v1 будет способен принять фиатные деньги от любого физического или юридического лица, любой страны и любой валюты. Тем самым он открывает доступ к криптовалюте любому лицу.
+					.bottom-items-faq-wrapper
+						h2 Условия
+						.faq__items-top.bottom-items-faq
+							.bottom-items-faq__item.faq__item
+								h3.bottom-items-faq__subtitle.faq__subtitle Основные условия
+									span
+								.bottom-items-faq__text.faq__text Akra Wallet v1 будет способен принять фиатные деньги от любого физического или юридического лица, любой страны и любой валюты. Тем самым он открывает доступ к криптовалюте любому лицу.
+							.bottom-items-faq__item.faq__item
+								h3.bottom-items-faq__subtitle.faq__subtitle Какие документы необходимы для регистрации кошелька?
+									span
+								.bottom-items-faq__text.faq__text Akra Wallet v1 будет способен принять фиатные деньги от любого физического или юридического лица, любой страны и любой валюты. Тем самым он открывает доступ к криптовалюте любому лицу.
+							.bottom-items-faq__item.faq__item
+								h3.bottom-items-faq__subtitle.faq__subtitle Какие гарантии сотрудничества и реальности AKRA?
+									span
+								.bottom-items-faq__text.faq__text Akra Wallet v1 будет способен принять фиатные деньги от любого физического или юридического лица, любой страны и любой валюты. Тем самым он открывает доступ к криптовалюте любому лицу.
+							.bottom-items-faq__item.faq__item
+								h3.bottom-items-faq__subtitle.faq__subtitle Контакты для вопросов
+									span
+								.bottom-items-faq__text.faq__text Akra Wallet v1 будет способен принять фиатные деньги от любого физического или юридического лица, любой страны и любой валюты. Тем самым он открывает доступ к криптовалюте любому лицу.
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

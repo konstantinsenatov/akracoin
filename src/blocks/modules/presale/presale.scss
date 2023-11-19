@@ -1,0 +1,211 @@
+.presale {
+	margin-top: 5.5875rem;
+	@media (max-width: 119.9375rem){
+		margin-top: 6.125rem;
+	}
+	@media (max-width: 89.9375rem){
+		margin-top: 5.6875rem;
+	}
+	@media (max-width: 63.9375rem){
+		margin-top: 2.6125rem;
+	}
+	@media (max-width: 47.9375rem){
+		margin-top: 3.95rem;
+	}
+	@media (max-width: 29.9375rem){
+		margin-top: 1.875rem;
+	}
+	&__container {}
+	&__title {
+		text-align: center;
+		max-width: 39.625rem;
+		margin: 0 auto;
+		@media (max-width: 47.9375rem){
+			max-width: 19.9375rem;
+		}
+		@media (max-width: 29.9375rem){
+			max-width: 12.375rem;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		max-width: 40.75rem;
+		margin: 0 auto;
+		margin-top: 2.5rem;
+		br {
+			display: none;
+		}
+		@media (max-width: 89.9375rem){
+			font-size: 1.125rem!important;
+			line-height: 1.375rem!important;
+			margin-top: 2.1rem;
+		}
+		@media (max-width: 63.9375rem) {
+			font-size: 0.875rem !important;
+			line-height: 1.0625rem !important;
+			width: 35.375rem;
+			margin-top: 1.875rem!important;
+		}
+		@media (max-width: 47.9375rem){
+			width: 24.6875rem;
+			margin-top: 1.375rem!important;
+			br {
+				display: block;
+			}
+		}
+		@media (max-width: 29.9375rem){
+			width: 14rem;
+			font-size: 0.625rem!important;
+			line-height: 0.75rem!important;
+			br {
+				display: none;
+			}
+		}
+	}
+
+	&__items {
+		margin-top: 4.35rem;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 119.9375rem){
+			margin-top: 3.4375rem;
+		}
+		@media (max-width: 63.9375rem){
+			flex-direction: column;
+			align-items: center;
+			margin-top: 0;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: -0.875rem;
+		}
+	}
+
+	&__item {
+		flex: 0 1 23.125rem;
+		@media (max-width: 89.9375rem){
+			flex: 0 1 18rem;
+		}
+		@media (max-width: 63.9375rem){
+			margin-top: 1.875rem;
+			@include ie(){
+				flex-basis: auto;
+			}
+		}
+		@media (max-width: 47.9375rem){
+			margin-top: 1.625rem;
+		}
+	}
+
+	&__card {
+		box-shadow: 0 0 0.625rem rgba(255, 255, 255, 0.25);
+		border-radius: 2.5rem;
+		height: 100%;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 1.188rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		color: #F4F6F8;
+		padding: 1.875rem 1rem;
+		background: linear-gradient(180deg, #000034 0%, #897DF7 100%);
+		position: relative;
+		@media (max-width: 89.9375rem){
+			max-width: 18rem;
+			padding: 1.875rem 1.5rem;
+			br {
+				display: none;
+			}
+		}
+		@media (max-width: 47.9375rem) {
+			padding: 1.875rem 0.7rem;
+		}
+		@media (max-width: 29.9375rem) {
+			font-size: 0.875rem;
+			line-height: 1.06rem;
+		border-radius: 1.5rem;
+		}
+		&::before{
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 5.0625rem;
+			background: url('../img/svg/presale/stars.svg') 0 0 / 100% 100% no-repeat;
+		}
+		&-title {
+			font-size: 1.5rem;
+			line-height: 1.8125rem;
+			@media (max-width: 29.9375rem) {
+				font-size: 1.25rem;
+				line-height: 1.5rem;
+			}
+		}
+		&-top {
+			font-weight: 400;
+			margin-top: 1.5rem;
+@media (max-width: 29.9375rem) {
+		margin-top: 1rem;
+	}
+			@include ie(){
+				align-self: stretch;
+			}
+		}
+		&-center {
+			font-weight: 400;
+			margin-top: 1rem;
+			@media (max-width: 89.9375rem) {
+				margin-top: 1.6rem;
+			}
+						@media (max-width: 29.9375rem) {
+							margin-top: 1rem;
+						}
+			@include ie(){
+				align-self: stretch;
+			}
+		}
+		&-bottom {
+			font-weight: 400;
+			flex: 1 1 auto;
+			margin-top: 1rem;
+			@include ie(){
+				align-self: stretch;
+			}
+						@media (max-width: 29.9375rem) {
+										padding: 0rem 1.7rem;
+						}
+		}
+		&-btn {
+			width: 7.5rem;
+			height: 3.188rem;
+			margin-top: 1.625rem;
+			background: #00DBC8;
+			box-shadow: 0 0 0.625rem rgba(255, 255, 255, 0.25);
+			border-radius: 0.625rem;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 1rem;
+			line-height: 1.188rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: #F4F6F8;
+			transition: all 0.3s ease 0s;
+			@media (max-width: 29.9375rem) {
+					height: 2rem;
+					width: 7.063rem;
+				}
+			&:hover{
+				background: #00C2B1;
+			}
+		}
+	}
+}
+

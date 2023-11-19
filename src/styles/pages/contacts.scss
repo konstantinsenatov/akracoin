@@ -1,0 +1,144 @@
+.contacts {
+	margin-top: 2.5rem;
+	@media (max-width: 47rem){
+		margin-top: 1rem;
+	}
+	@media (max-width: 29rem){
+		margin-top: 0;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h2 {
+		display: flex;
+		justify-content: center;
+		@media (max-width: 29.9375rem){
+			font-size: 1rem;
+			line-height: 1.1875em;
+		}
+	}
+
+	p {
+		width: 41.5rem;
+		max-width: 100%;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;/* 
+		font-size: 1.125rem;
+		line-height: 1.375rem; */
+		color: #F4F6F8;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 1rem;
+		@media (max-width: 63.9375rem){
+			width: 36.125rem;
+		}
+		@media (max-width: 47.9375rem){
+			width: 23.3125rem;
+			display: block;
+		}
+		@media (max-width: 29.9375rem){
+			width: 15.5625rem;/* 
+			font-size: 0.625rem;
+			line-height: 0.75rem; */
+		}
+		span {
+			font-weight: 600;
+		}
+	}
+
+	&__items {
+		display: flex;
+		justify-content: center;
+		column-gap: 2.6875rem;
+		margin-top: 2.25rem;
+		@media (max-width: 29.9375rem){
+			margin-top: 1.5rem;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include ie(){
+			&+.contacts__item{
+				margin-left: 2.6875rem;
+			}
+		}
+
+		img {
+			@media (max-width: 29.9375rem) {
+				width: 4.125rem;
+				height: 4.125rem;
+			}
+		}
+		div {
+			margin-top: 0.9375rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@media (max-width: 29.9375rem){
+				margin-top: 0.625rem;
+			}
+		}
+		span {
+			font-family: 'Inter';
+			font-style: normal;
+			display: flex;
+			align-items: center;
+			color: #FFFFFF;
+			&:nth-child(1){
+				font-weight: 500;
+				font-size: 1.5rem;
+				line-height: 1.8125rem;
+				@media (max-width: 29.9375rem){
+					font-size: 1rem;
+					line-height: 1.1875rem;
+				}
+			}
+			&:last-child{
+				margin-top: 0.625rem;
+				font-weight: 400;
+				font-size: 1.125rem;
+				line-height: 1.375rem;
+				@media (max-width: 29.9375rem){
+					margin-top: 0.375rem;
+					font-size: 0.75rem;
+					line-height: 0.9375rem;
+				}
+			}
+		}
+	}
+
+	&__form {
+		margin-top: 6.25rem;
+		margin-bottom: 5rem;
+		@media (max-width: 47rem) {
+			margin-top: 1.5rem;
+			margin-bottom: 2.5rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: 1.9375rem;
+			margin-bottom: 2.5rem;
+		}
+		&--title {
+			margin: 0 auto;
+			font-weight: 700;
+			width: 18.5rem!important;
+			font-size: 2rem!important;
+			line-height: 2rem!important;
+			@media (max-width: 29.9375rem){
+				width: 12.3125rem!important;
+				font-size: 1.3125rem!important;
+				line-height: 1.3125rem!important;
+			}
+		}
+	}
+}
+
+

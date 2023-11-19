@@ -1,0 +1,122 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.future
+				.future__hero.hero-future 
+					.hero-future__container.container 
+						.hero-future__body.general-row 
+							.hero-future__body--left
+								h1 Как работает 
+									br
+									|сервис 
+									span AKRA
+									br 
+									|Futures robots
+								p.hero-future__body--text-desktop Сервис для доступного криптоинвестирования AKRA Futures robots разработан и поддерживается командой квалифицированных алготрейдеров. Он даёт возможность каждому получать достойный пассивный доход, а низкий порог для входа обеспечивает лёгкий старт в мир криптовалютных инвестиций.
+							.hero-future__img 
+								img(src="img/pages/future/1.png", alt="alt")
+							p.hero-future__body--text-mobile Сервис для доступного криптоинвестирования AKRA Futures robots разработан и поддерживается командой квалифицированных алготрейдеров. Он даёт возможность каждому получать достойный пассивный доход, а низкий порог для входа обеспечивает лёгкий старт в мир криптовалютных инвестиций.
+						
+						
+				.future__whatis.whatis-future
+					.whatis-future__container.container
+						h2 Что такое AKRA Futures robots
+						p AKRA Futures robots представляет собой платформу, где инвесторы вкладывают свои средства в автоматическую фьючерсную торговлю криптовалютой. По сравнению с классическими схемами инвестирования, включая высокорисковую самостоятельную биржевую торговлю, инвестиции в торговых роботов гораздо привлекательнее по многим причинам:
+						.whatis-future__items 
+							.whatis-future__row
+								.whatis-future__item 
+									.whatis-future__column 
+										.whatis-future__icon 1
+										.whatis-future__subtitle Доступность инвестиций
+										.whatis-future__text Пользователю не нужно знать механизмы работы криптовалютного рынка и самостоятельно строить прогнозы — за него всё делают торговые роботы, настроенные и контролируемые профессиональными криптовалютными трейдерами.
+								.whatis-future__item 
+									.whatis-future__column 
+										.whatis-future__icon 2
+										.whatis-future__subtitle Доходность даже при небольших инвестициях
+										.whatis-future__text Депозиты инвесторов объединяются в несколько торговых пулов, что одновременно решает две задачи: гарантирует равный уровень доходности для всех инвесторов и диверсифицирует торговые риски.
+								.whatis-future__item 
+									.whatis-future__column 
+										.whatis-future__icon 3
+										.whatis-future__subtitle Прозрачность операций с депозитом
+										.whatis-future__text Отследить работу торговых роботов и лично оценить их эффективность в действии может каждый пользователь площадки. На нашем канале ведётся прямая трансляция торгового терминала, вся информация на площадке отображена в простой и понятной даже непрофессионалу форме.
+
+				.block-video.future-block-video 
+					.block-video__container.container 
+						.block-video-wrapper#block-video-wrapper.future-block-video__wrapper
+							video#block-video__player.block-video__player(controls="controls")
+								source(src="video/sample.mp4" type="video/mp4")
+							.block-video__img.future-block-video__img.play
+							.block-video__play-btn
+								img(src="img/svg/block-video/btn.svg", alt="alt")
+					
+						p В основе AKRA Futures robots лежит проверенная годами, а также инвестиционными проектами разного масштаба, торговая система на основе математических алгоритмов. Наши разработчики довели её до совершенства, внедрив ряд инновационных решений в части управления торговлей и распределения доходов. Это сделало торговую площадку удобной и понятной для всех пользователей вне зависимости от их уровня знаний биржевой торговли.
+
+				.future__earn.earn-future
+					.earn-future__container.container 
+						.earn-future__body.general-row
+							.earn-future__img 
+								img(src="img/pages/future/2.png", alt="alt")
+							.earn-future__body--left
+								h2 Как зарабатывать с AKRA Futures robots
+								p.earn-future__body--text-desktop С инвестиционной платформой AKRA Futures robots зарабатывать не сложнее, чем открыть счёт в банке, и гораздо проще, чем самостоятельно инвестировать в классические инструменты: акции, ОФЗ или фонды.
+							p.earn-future__body--text-mobile С инвестиционной платформой AKRA Futures robots зарабатывать не сложнее, чем открыть счёт в банке, и гораздо проще, чем самостоятельно инвестировать в классические инструменты: акции, ОФЗ или фонды.
+						p Стать пользователем сервиса AKRA Futures robots может каждый, для этого необходимо всего 3 шага:
+						.earn-future__items 
+							.earn-future__item 
+								.earn-future__column 
+									.earn-future__icon 
+										img(src="img/pages/future/1.svg", alt="alt")
+									.earn-future__text Пройти регистрацию на торговой платформе — потребуется минимум данных: адрес действительной электронной почты и номер телефона;										
+							.earn-future__item 
+								.earn-future__column 
+									.earn-future__icon 
+										img(src="img/pages/future/2.svg", alt="alt")
+									.earn-future__text Пополнить свой внутренний депозит в сервисе AKRA Futures robots — сделать это можно криптовалютой или фиатными валютами через банковские карты, ЭПС или расчётный счёт;
+							.earn-future__item 
+								.earn-future__column 
+									.earn-future__icon 
+										img(src="img/pages/future/3.svg", alt="alt")
+									.earn-future__text Выбрать торгового робота из команды наших алготрейдеров и инвестировать средства в торговлю.
+						p Все торговые процессы на платформе автоматизированы со стороны пользователей: личного участия и корректировки действий роботов не требуется. Задача инвесторов AKRA Futures robots только в наблюдении за ростом их пассивного дохода и выполнении основных финансовых операций с депозитом: вывода заработанных средств или увеличения торговых объёмов для ещё большего заработка.
+
+				.future__scale.scale-future 
+					.scale-future__container.container 
+						.scale-future__body.general-row 
+							.scale-future__body--left
+								h1 Масштаб AKRA Futures robots
+								p.scale-future__body--text-desktop Автоматическая торговля на биржах с использованием торговых роботов — это закономерный этап эволюции биржевой торговли. 
+							.scale-future__img 
+								img(src="img/pages/future/3.png", alt="alt")
+							p.scale-future__body--text-mobile Автоматическая торговля на биржах с использованием торговых роботов — это закономерный этап эволюции биржевой торговли. 
+						p  Первые торговые роботы появились задолго до возникновения криптовалютных бирж, но если поначалу они были восприняты профессиональными трейдерами скептически, то сегодня сами биржи приняли эту тенденцию и поддерживают алготрейдеров. Ведь их руководство понимает, что будущее всей биржевой торговли и криптовалютной, в частности, — за работами. На это есть множество причин:
+						.scale-future__items 
+							.scale-future__item 
+								.scale-future__column 
+									.scale-future__icon 1
+									.scale-future__text Роботы одновременно отслеживают целый пул разных индикаторов теханализа, что приближает вероятность получения верного прогноза к 100%. Ни один трейдер физически не в состоянии в короткий срок обработать такой объём информации.
+							.scale-future__item 
+								.scale-future__column 
+									.scale-future__icon 2
+									.scale-future__text Торговые роботы не устают. Для опытного трейдера рассчитывать 2–3 удачные точки входа за сессию — это потолок. Всё, что больше, — это уже интуиция пополам с удачей, а каждая такая сделка очень рискованна. Роботы торгуют в режиме 24/7, а их внимание и контроль ситуации не ослабевают со временем.
+							.scale-future__item 
+								.scale-future__column 
+									.scale-future__icon 3
+									.scale-future__text Роботы не ошибаются. Их неудача является следствием ошибки в алгоритмах, именно по этой причине разработчики AKRA Futures robots допускают роботов к торговле только после длительной проверки в реальных торговых условиях и анализа их работы.
+							.scale-future__item 
+								.scale-future__column 
+									.scale-future__icon 4
+									.scale-future__text У роботов нет эмоций, поэтому заключённых на азарте или в панике торговых сделок в AKRA Futures robots нет. Это стабилизирует доходность и снижает торговые риски.
+						p Все роботы на платформе входят в команды, где каждая контролируется ведущим алготрейдером. При выходящих за рамки алгоритма биржевых течениях трейдеры оперативно корректируют действия роботов в ручном режиме, что позволяет в любых ситуациях сохранить и увеличить капитал инвесторов AKRA Futures robots.
+
+
+		include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

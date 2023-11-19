@@ -1,0 +1,80 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.contacts
+				.contacts__container.container 
+					h2 C нами легко связаться
+					p 
+						span Наша цель 
+						|— создавать выгоду на основе принципов справедливости и устойчивого развития на благо нынешних и будущих поколений  
+					.contacts__items
+						a.contacts__item(href="tg:@AKRA_support")
+							img(src="img/pages/contacts/telegram.svg", alt="alt")
+							div
+								span Telegram
+								span @AKRA_support
+						a.contacts__item(href="mailto:info@akra.co.in") 
+							img(src="img/pages/contacts/email.svg", alt="alt")
+							div
+								span Напишите нам
+								span info@akra.co.in
+					form.contacts__form.form(action="#" method="method")
+						.form__container
+							.form__title.contacts__form--title Будем рады ответить на выши вопросы!
+							.form__name
+								label Ваше Имя
+								.form__input.form__input-name 
+									input(type="text", placeholder="Введите ваше Имя").input
+							.form__btns
+								.form__btn.form__btn-email.active 
+									|E-mail
+								.form__btn.form__btn-tel 
+									|Телефон
+							.form__email
+								label Ваш E-mail
+								.form__input.form__input-email
+									input(type="text", placeholder="Введите ваш e-mail").input
+							.form__tel
+								label Ваш номер телефона
+								.form__body-tel 
+									.form__select-country-tel 
+										img(src="img/pages/contacts/flag.svg", alt="alt")
+										img(src="img/pages/contacts/arrows.svg", alt="alt")
+									.form__input-wrapper-tel 
+										.form__input.form__input-tel
+											input(type="tel", placeholder="(_ _ _) _ _ _ - _ _ - _ _").input
+							.form__question 
+								label Ваш вопрос
+								.form__question-input-wrapper
+									.form__input.form__input-question 
+										.form__input-question-text
+											input(type="text", placeholder="Задайте ваш вопрос") 
+										.form__input-question-file
+											input(type="file").input-question-file
+											.question-file
+												img(src="img/pages/contacts/Vector.svg", alt="alt")
+												span Файл
+							.form__captcha
+								.checkbox
+									input#formAgreement.checkbox__input._req(checked='' type='checkbox' name='agreement' required)
+									label.checkbox__label(for='formAgreement')
+										span
+											|Я не робот
+								.form__captcha-icon 
+									img(src="img/pages/contacts/captcha.svg", alt="alt")
+								.form__captcha-bottom Конфиденциальность — условия использования
+
+							button.form__button(type="submit") Отправить вопрос
+
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

@@ -1,0 +1,96 @@
+.error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8.75rem;
+	margin-bottom: 7.25rem;
+	@media (max-width: 63.9375rem){
+		padding-top: 13.75rem;
+	}
+	&__title {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18.75rem;
+		line-height: 22.6875rem;
+		text-align: center;
+		color: #FFFFFF;
+		@media (max-width: 63.9375rem){
+			font-size: 12.5rem;
+			line-height: 15.125rem;
+		}
+		@media (max-width: 47.9375rem){
+			font-size: 9.375rem;
+			line-height: 11.375rem;
+		}
+		@media (max-width: 29.9375rem){
+			font-size: 6.25rem;
+			line-height: 7.5625rem;
+		}
+	}
+	&__text {
+		margin-top: 1.5rem;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: center;
+		color: #FFFFFF;
+		max-width: 28.125rem;
+		margin-left: auto;
+		margin-right: auto;
+		@media (max-width: 63.9375rem){
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+		@media (max-width: 47.9375rem){
+			font-size: 0.875rem;
+			line-height: 2rem;
+		}
+		@media (max-width: 29.9375rem){
+			font-size: 0.625rem;
+			line-height: 1.3125rem;
+		}
+	}
+	&__btn {
+		width: 28.75rem;
+		height: 6.25rem;
+		margin: 0 auto;
+		margin-top: 1.75rem;
+		background: #05C8DE;
+		border-radius: 1.5625rem;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: #FFFFFF;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			opacity: 0.7;
+		}
+		@media (max-width: 63.9375rem){
+			width: 28rem;
+			font-size: 1.75rem;
+			line-height: 2rem;
+		}
+		@media (max-width: 47.9375rem){
+			width: 23.125rem;
+			height: 5rem;
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
+		@media (max-width: 29.9375rem){
+			width: 15.375rem;
+			height: 3.25rem;
+			border-radius: 1.04166875rem;
+			font-size: 1rem;
+			line-height: 1.3125rem;
+		}
+	}
+}

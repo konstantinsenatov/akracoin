@@ -1,0 +1,21 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.error
+				.error__container.container 
+					.error__title 404
+					.error__text Произошла ошибка. Данная страница удалена или не существует.
+					a.error__btn(href="#") Вернуться на гланую
+
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
