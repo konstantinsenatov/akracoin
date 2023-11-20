@@ -1,3 +1,7 @@
+body {
+	position: relative;
+	min-height: 100%;
+}
 h1 {
 	font-family: 'Inter';
 	font-style: normal;
@@ -100,7 +104,7 @@ p {
 
 
 
-.circle {
+.circle_scroll_anim {
 	position: absolute;
 	z-index: -1;
 	width: 20vw;
@@ -108,37 +112,37 @@ p {
 	border-radius: 50%;
 	filter: blur(50px);
 }
-.circle1 {
+.circle_scroll_anim1 {
 	top: 5%;
-	right: 10%;
+	left: 0%;
 	background-color: #0de5fe;
 }
-.circle2 {
+.circle_scroll_anim2 {
 	top: 18%;
 	right: 70%;
 	background-color: #e663ff;
 }
-.circle3 {
+.circle_scroll_anim3 {
 	top: 27%;
-	right: 50%;
+	right: 10%;
 	background-color: #9ae987;
 }
-.circle4 {
+.circle_scroll_anim4 {
 	top: 38%;
 	left: 60%;
 	background-color: #6e65d1;
 }
-.circle5 {
+.circle_scroll_anim5 {
 	top: 55%;
 	left: 30%;
 	background-color: #fd868c;
 }
-.circle6 {
+.circle_scroll_anim6 {
 	top: 65%;
 	left: 50%;
 	background-color: #fed886;
 }
-.circle7 {
+.circle_scroll_anim7 {
 	top: 80%;
 	right: 30%;
 	background-color: #3646c5;

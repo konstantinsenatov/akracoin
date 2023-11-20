@@ -6,59 +6,59 @@ $(document).ready(function() {
 	});
 
 
-	const circlePosition1 = gsap.timeline();
-	circlePosition1.fromTo('.circle1', 1, {transform: 'scale(0.4) translate(50%, 100%)'}, {transform: 'scale(1)  translate(-50%, -100%)'}, 0)
+	const circle_scroll_animPosition1 = gsap.timeline();
+	circle_scroll_animPosition1.fromTo('.circle_scroll_anim1', 1, {transform: 'scale(0.5) translate(-100%, 100%)'}, {transform: 'scale(1)  translate(100%, -100%)'}, 0)
 	ScrollTrigger.create({
-		animation: circlePosition1,
-		trigger: '.circle1',
+		animation: circle_scroll_animPosition1,
+		trigger: '.circle_scroll_anim1',
 		scrub: 2,
 	})
 	
-	const circlePosition2 = gsap.timeline();
-	circlePosition2.fromTo('.circle2', 1, {transform: 'scale(0.1) translate(50%, 0%)'}, {transform: 'scale(1)  translate(100%, 100%)'}, 0)
+	const circle_scroll_animPosition2 = gsap.timeline();
+	circle_scroll_animPosition2.fromTo('.circle_scroll_anim2', 1, {transform: 'scale(1) translate(50%, 0%)'}, {transform: 'scale(0)  translate(100%, 100%)'}, 0)
 	ScrollTrigger.create({
-		animation: circlePosition2,
-		trigger: '.circle2',
-		scrub: 3,
-	})
-	
-	const circlePosition3 = gsap.timeline();
-	circlePosition3.fromTo('.circle3', 1, {transform: 'scale(1.2) translate(0%, 100%)'}, {transform: 'scale(0.6)  translate(-50%, 0%)'}, 0)
-	ScrollTrigger.create({
-		animation: circlePosition3,
-		trigger: '.circle3',
-		scrub: 0,
-	})
-	
-	const circlePosition4 = gsap.timeline();
-	circlePosition4.fromTo('.circle4', 1, {transform: 'scale(0) translate(50%, 100%)'}, {transform: 'scale(1)  translate(-50%, -100%)'}, 0)
-	ScrollTrigger.create({
-		animation: circlePosition4,
-		trigger: '.circle4',
+		animation: circle_scroll_animPosition2,
+		trigger: '.circle_scroll_anim2',
 		scrub: 1,
 	})
 	
-	const circlePosition5 = gsap.timeline();
-	circlePosition5.fromTo('.circle5', 1, {transform: 'scale(1.3) translate(0%, 0%)'}, {transform: 'scale(0)  translate(-150%, -100%)'}, 0)
+	const circle_scroll_animPosition3 = gsap.timeline();
+	circle_scroll_animPosition3.fromTo('.circle_scroll_anim3', 1, {transform: 'scale(1.5) translate(0%, 100%)'}, {transform: 'scale(0)  translate(-50%, 0%)'}, 0)
 	ScrollTrigger.create({
-		animation: circlePosition5,
-		trigger: '.circle5',
-		scrub: 3,
-	})
-	
-	const circlePosition6 = gsap.timeline();
-	circlePosition6.fromTo('.circle6', 1, {transform: 'scale(1) translate(0%, 0%)'}, {transform: 'scale(0.2)  translate(-50%, 100%)'}, 0)
-	ScrollTrigger.create({
-		animation: circlePosition6,
-		trigger: '.circle6',
+		animation: circle_scroll_animPosition3,
+		trigger: '.circle_scroll_anim3',
 		scrub: 0,
 	})
 	
-	const circlePosition7 = gsap.timeline();
-	circlePosition7.fromTo('.circle7', 1, {transform: 'scale(0.1) translate(0%, 30%)'}, {transform: 'scale(0.7)  translate(-50%, -150%)'}, 0)
+	const circle_scroll_animPosition4 = gsap.timeline();
+	circle_scroll_animPosition4.fromTo('.circle_scroll_anim4', 1, {transform: 'scale(0.6) translate(0%, 0%)'}, {transform: 'scale(1)  translate(-100%, 100%)'}, 0)
 	ScrollTrigger.create({
-		animation: circlePosition7,
-		trigger: '.circle7',
+		animation: circle_scroll_animPosition4,
+		trigger: '.circle_scroll_anim4',
+		scrub: 1,
+	})
+	
+	const circle_scroll_animPosition5 = gsap.timeline();
+	circle_scroll_animPosition5.fromTo('.circle_scroll_anim5', 1, {transform: 'scale(2) translate(0%, 0%)'}, {transform: 'scale(0)  translate(-150%, -100%)'}, 0)
+	ScrollTrigger.create({
+		animation: circle_scroll_animPosition5,
+		trigger: '.circle_scroll_anim5',
 		scrub: 2,
+	})
+	
+	const circle_scroll_animPosition6 = gsap.timeline();
+	circle_scroll_animPosition6.fromTo('.circle_scroll_anim6', 1, {transform: 'scale(1.7) translate(0%, 0%)'}, {transform: 'scale(2.5)  translate(-150%, 100%)'}, 0)
+	ScrollTrigger.create({
+		animation: circle_scroll_animPosition6,
+		trigger: '.circle_scroll_anim6',
+		scrub: 0,
+	})
+	
+	const circle_scroll_animPosition7 = gsap.timeline();
+	circle_scroll_animPosition7.fromTo('.circle_scroll_anim7', 1, {transform: 'scale(0.1) translate(0%, 30%)'}, {transform: 'scale(1.7)  translate(-50%, 150%)'}, 0)
+	ScrollTrigger.create({
+		animation: circle_scroll_animPosition7,
+		trigger: '.circle_scroll_anim7',
+		scrub: 1,
 	})
 });
